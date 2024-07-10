@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="spotify.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body class="bg-[#000000] text-[#fff] overflow-hidden">
+    <div class="flex p-2 gap-2">
+        <div class="left w-[18%] h-screen flex flex-col gap-3">
+            <div class="bg-[#121212] w-full h-1/4 rounded-lg">
+                <ul class="my-3">
+                    <li class="mx-3">
+                        <a href="#" class="flex p-3 rounded-lg gap-2 hover:bg-[#1b1b1b] duration-150">
+                            <i class="ri-home-5-fill"></i>
+                            <h3>Home</h3>
+                        </a>
+                    </li>
+                    <li class="mx-3">
+                        <a href="#" class="flex p-3 rounded-lg gap-2 hover:bg-[#1b1b1b] duration-150">
+                            <i class="ri-search-2-line"></i>
+                            <h3>Search</h3>
+                        </a>
+                    </li>
+                    <li class="mx-3">
+                        <a href="#" class="flex p-3 rounded-lg gap-2 hover:bg-[#1b1b1b] duration-150">
+                            <i class="ri-album-fill"></i>
+                            <h3>Your Library</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-[#121212] w-full  h-3/4 rounded-lg">
+                <h3 class="m-6 font-semibold">Playlists</h3>
+
+                <ul class="m-6">
+                    <li class="mb-3">
+                        <a href="#" class="flex items-center rounded-lg gap-3 duration-150">
+                            <i class="ri-add-line bg-[#000000] p-3"></i>
+                            <h3 class="">Create Playlist</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="#" class="flex items-center rounded-lg gap-3 duration-150">
+                            <i class="ri-heart-3-fill bg-[#000000] p-3"></i>
+                            <h3 class="">Liked Songs</h3>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="right grow w-[82%] bg-[#121212] rounded-lg p-6 h-screen overflow-y-scroll">
+
+            <div class="top flex justify-between">
+                <div class="top-left">
+                    <i class="ri-arrow-left-s-line p-3 mr-1 bg-[#000000] rounded-full cursor-pointer hover:bg-[#1b1b1b] duration-150"></i>
+                    <i class="ri-arrow-right-s-line p-3  bg-[#000000] rounded-full cursor-pointer hover:bg-[#1b1b1b] duration-150"></i>
+                </div>
+                <div class="top-right">
+                    <div class="flex items-center bg-[#000000] p-1 rounded-full gap-3 cursor-pointer hover:bg-[#1b1b1b] duration-150">
+                        <img src="pp.webp" class="w-[30px] rounded-full" >
+                        <h2 class="text-[14px]">Manan Kanani</h2>
+                        <i class="ri-arrow-down-s-fill mx-2"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main">
+
+                <h2 class="text-3xl font-semibold my-7 mt-10">Good Morning,</h2>
+
+                <div>
+                    <ul class="flex gap-5 mb-5">
+                        <li class="w-full">
+                            <a href="#" class="flex items-center rounded-md bg-[#1b1b1b]"> 
+                                <img src="cover.png" class="w-[80px] rounded-md" alt="">
+                                <h3 class="p-4">Release Radar</h3> 
+                            </a>
+                        </li>
+                        <li class="w-full">
+                            <a href="#" class="flex items-center rounded-md bg-[#1b1b1b]"> 
+                                <img src="cover.png" class="w-[80px] rounded-md" alt="">
+                                <h3 class="p-4">Crimetown</h3> 
+                            </a>
+                        </li>
+                        <li class="w-full">
+                            <a href="#" class="flex items-center rounded-md bg-[#1b1b1b]"> 
+                                <img src="cover.png" class="w-[80px] rounded-md" alt="">
+                                <h3 class="p-4">Discover Weekly</h3> 
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="flex gap-5">
+                        <li class="w-full">
+                            <a href="#" class="flex items-center rounded-md bg-[#1b1b1b]"> 
+                                <img src="cover.png" class="w-[80px] rounded-md" alt="">
+                                <h3 class="p-4">Daily Mix 1</h3> 
+                            </a>
+                        </li>
+                        <li class="w-full">
+                            <a href="#" class="flex items-center rounded-md bg-[#1b1b1b]"> 
+                                <img src="cover.png" class="w-[80px] rounded-md" alt="">
+                                <h3 class="p-4">Daily Mix 2</h3> 
+                            </a>
+                        </li>
+                        <li class="w-full">
+                            <a href="#" class="flex items-center rounded-md bg-[#1b1b1b]"> 
+                                <img src="cover.png" class="w-[80px] rounded-md" alt="">
+                                <h3 class="p-4">Farewell</h3> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-12">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3 class="text-2xl font-semibold">Your heavy rotation</h3>
+                        </div>
+                        <div><a href="#">See More</a></div>
+                    </div>
+
+
+                    <div>
+                        <ul class="flex gap-5 mt-6">
+                            <a href="#" class="flex flex-col grow bg-[#1b1b1b] p-4 rounded-md music-item relative">
+                                <i class="ri-play-fill play-btn p-4 bg-[#24bb59] rounded-full"></i>
+                                <img src="cover.png" class="rounded-md" alt="">
+                                <div class="mt-2">
+                                    <h3 class="text-md font-medium">Farewell</h3> 
+                                    <h4 class="text-sm font-light opacity-75">Wardell</h4>
+                                </div>
+                            </a>
+                            <a href="#" class="flex flex-col grow bg-[#1b1b1b] p-4 rounded-md music-item relative">
+                                <i class="ri-play-fill play-btn p-4 bg-[#24bb59] rounded-full"></i>
+
+                                <img src="cover.png" class="rounded-md" alt="">
+                                <div class="mt-2">
+                                    <h3 class="text-md font-medium">Farewell</h3> 
+                                    <h4 class="text-sm font-light opacity-75">Wardell</h4>
+                                </div>
+                            </a>
+                            <a href="#" class="flex flex-col grow bg-[#1b1b1b] p-4 rounded-md music-item relative">
+                                <i class="ri-play-fill play-btn p-4 bg-[#24bb59] rounded-full"></i>
+
+                                <img src="cover.png" class="rounded-md" alt="">
+                                <div class="mt-2">
+                                    <h3 class="text-md font-medium">Farewell</h3> 
+                                    <h4 class="text-sm font-light opacity-75">Wardell</h4>
+                                </div>
+                            </a>
+                            <a href="#" class="flex flex-col grow bg-[#1b1b1b] p-4 rounded-md music-item relative">
+                                <i class="ri-play-fill play-btn p-4 bg-[#24bb59] rounded-full"></i>
+
+                                <img src="cover.png" class="rounded-md" alt="">
+                                <div class="mt-2">
+                                    <h3 class="text-md font-medium">Farewell</h3> 
+                                    <h4 class="text-sm font-light opacity-75">Wardell</h4>
+                                </div>
+                            </a>
+                            <a href="#" class="flex flex-col grow bg-[#1b1b1b] p-4 rounded-md music-item relative">
+                                <i class="ri-play-fill play-btn p-4 bg-[#24bb59] rounded-full"></i>
+
+                                <img src="cover.png" class="rounded-md" alt="">
+                                <div class="mt-2">
+                                    <h3 class="text-md font-medium">Farewell</h3> 
+                                    <h4 class="text-sm font-light opacity-75">Wardell</h4>
+                                </div>
+                            </a>
+                        </ul>
+                        <ul class="flex gap-5 mt-6">
+                            <a href="#" class="flex flex-col grow bg-[#1b1b1b] p-4 rounded-md music-item relative">
+                                <i class="ri-play-fill play-btn p-4 bg-[#24bb59] rounded-full"></i>
+
+                                <img src="cover.png" class="rounded-md" alt="">
+                                <div class="mt-2">
+                                    <h3 class="text-md font-medium">Farewell</h3> 
+                                    <h4 class="text-sm font-light opacity-75">Wardell</h4>
+                                </div>
+                            </a>
+                            <a href="#" class="flex flex-col grow bg-[#1b1b1b] p-4 rounded-md music-item relative">
+                                <i class="ri-play-fill play-btn p-4 bg-[#24bb59] rounded-full"></i>
+
+                                <img src="cover.png" class="rounded-md" alt="">
+                                <div class="mt-2">
+                                    <h3 class="text-md font-medium">Farewell</h3> 
+                                    <h4 class="text-sm font-light opacity-75">Wardell</h4>
+                                </div>
+                            </a>
+                            <a href="#" class="flex flex-col grow bg-[#1b1b1b] p-4 rounded-md music-item relative">
+                                <i class="ri-play-fill play-btn p-4 bg-[#24bb59] rounded-full"></i>
+
+                                <img src="cover.png" class="rounded-md" alt="">
+                                <div class="mt-2">
+                                    <h3 class="text-md font-medium">Farewell</h3> 
+                                    <h4 class="text-sm font-light opacity-75">Wardell</h4>
+                                </div>
+                            </a>
+                            <a href="#" class="flex flex-col grow bg-[#1b1b1b] p-4 rounded-md music-item relative">
+                                <i class="ri-play-fill play-btn p-4 bg-[#24bb59] rounded-full"></i>
+
+                                <img src="cover.png" class="rounded-md" alt="">
+                                <div class="mt-2">
+                                    <h3 class="text-md font-medium">Farewell</h3> 
+                                    <h4 class="text-sm font-light opacity-75">Wardell</h4>
+                                </div>
+                            </a>
+                            <a href="#" class="flex flex-col grow bg-[#1b1b1b] p-4 rounded-md music-item relative">
+                                <i class="ri-play-fill play-btn p-4 bg-[#24bb59] rounded-full"></i>
+
+                                <img src="cover.png" class="rounded-md" alt="">
+                                <div class="mt-2">
+                                    <h3 class="text-md font-medium">Farewell</h3> 
+                                    <h4 class="text-sm font-light opacity-75">Wardell</h4>
+                                </div>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="h-[120px]"></div>
+
+
+                    
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+ 
+    <div class="bottom w-full fixed bottom-[0] bg-[#00000090] backdrop-blur p-5 h-[100px] flex justify-between ">
+
+        <div class="bottom-left flex items-center gap-3 w-1/5">
+            <img src="cover.png" class="h-[65px] rounded-md" alt="">
+            <div>
+                <h3 class="text-md font-medium">Farewell</h3> 
+                <h4 class="text-sm font-light">Wardell</h4>
+            </div>
+            <i class="ri-heart-3-line"></i>
+        </div>
+
+        <div class="bottom-center flex flex-col items-center w-4/5">
+           <div class="flex gap-5 items-center mb-2">
+            <i class="ri-shuffle-line text-lg opacity-60 hover:opacity-100 duration-150 cursor-pointer"></i>
+            <i class="ri-skip-left-fill text-2xl opacity-60 hover:opacity-100 duration-150 cursor-pointer"></i>
+            <i class="ri-play-fill h-[25px] w-[25px] flex justify-center items-center p-4 bg-[#fefefe] hover:scale-[1.05] duration-150 text-black cursor-pointer rounded-full"></i>
+            <i class="ri-skip-right-fill text-2xl opacity-60 hover:opacity-100 duration-150 cursor-pointer"></i>
+            <i class="ri-loop-right-line text-lg opacity-60 hover:opacity-100 duration-150 cursor-pointer"></i>
+           </div>
+
+           <div class="flex gap-3">
+            <p>0.00</p>
+            <input type="range">
+            <p>3.45</p>
+           </div>
+        </div>
+        <div class="bottom-right w-1/5"></div>
+    </div>
+</body>
+</html>
