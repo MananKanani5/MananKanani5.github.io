@@ -1,0 +1,72 @@
+:root{
+    --primary: #1cd760;
+    --secondary: #000000;
+    --tersery: #121212;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #ebebeb10;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #ebebeb90; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ededed; 
+  }
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 25rem;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+  
+    background-color: #989898;
+    height: 0.2rem;
+    width: 5rem;
+    border-radius: 0.4rem;
+
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #1b1b1b;
+    border-radius: 0.4rem;
+    height: 0.2rem;  
+ }
+
+ .music-item{
+
+  overflow: hidden;
+ }
+
+ .music-item .play-btn{
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    bottom: 62px;
+    right: 12px;
+    transition: all 0.3s ease-in-out;
+  }
+  .music-item:hover .play-btn{
+    opacity: 1;
+
+    bottom:80px ;
+    right:25px;
+ }
